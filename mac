@@ -175,6 +175,7 @@ brew_install_or_upgrade 'rbenv'
 brew_install_or_upgrade 'ruby-build'
 brew_tap 'caskroom/cask'
 brew_cask_install_or_upgrade 'xquartz'
+append_to_zshrc 'export PATH="$PATH:/usr/X11/bin"'
 
 # shellcheck disable=SC2016
 append_to_zshrc 'eval "$(rbenv init - --no-rehash zsh)"' 1
