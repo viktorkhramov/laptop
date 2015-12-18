@@ -190,7 +190,7 @@ brew unlink openssl && brew link openssl --force
 # shellcheck disable=SC2016
 eval "$(rbenv init - zsh)"
 
-ruby_version="2.1.5"
+ruby_version="2.2.3"
 
 if ! rbenv versions | grep -Fq "$ruby_version"; then
   rbenv install -s "$ruby_version"
